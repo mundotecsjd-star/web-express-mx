@@ -1,0 +1,67 @@
+<!-- Web Express MX — página del servicio. Una sola vista en tono cálido CDMX. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Express MX</title>
+<style>
+:root{--bg:#faf3e7;--fg:#2b1d12;--muted:#7a6a58;--surface:#fff8ee;--line:#e8dcc8;--accent:#b3341f;--accent-deep:#7c2112;--rad:14px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Source Sans 3',system-ui,sans-serif;background:var(--bg);color:var(--fg);line-height:1.55;font-size:16px}
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Source+Sans+3:wght@400;600;700&display=swap');
+.wrap{max-width:680px;margin:0 auto;padding:0 20px 48px}
+.hero{background:linear-gradient(160deg,var(--accent),var(--accent-deep));color:#fff7ec;border-radius:var(--rad);padding:44px 26px;margin:20px 0 28px;text-align:center}
+.eyebrow{display:inline-block;background:rgba(0,0,0,.22);color:#ffcf7d;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:5px 14px;border-radius:999px;margin-bottom:14px}
+h1{font-family:'Alfa Slab One',serif;font-size:clamp(32px,7vw,48px);line-height:1.05;margin-bottom:10px}
+.tag{font-size:17px;color:#ffe9c9}
+h2{font-family:'Alfa Slab One',serif;font-weight:400;font-size:22px;margin:32px 0 14px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--rad);padding:18px}
+.card b{display:block;margin-bottom:4px}
+.card p{color:var(--muted);font-size:14px}
+.pricing{display:flex;gap:12px;flex-wrap:wrap}
+.price{background:var(--surface);border:1px solid var(--line);border-radius:var(--rad);padding:18px;flex:1;min-width:160px;text-align:center}
+.price .amt{font-family:'Alfa Slab One',serif;font-size:26px;color:var(--accent)}
+.price small{color:var(--muted)}
+.demos a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--rad);padding:14px 16px;margin-bottom:10px;text-decoration:none;color:var(--fg);font-weight:600}
+.demos a:hover{border-color:var(--accent)}
+.demos span{color:var(--muted);font-weight:400;font-size:14px;display:block}
+.foot{margin-top:34px;text-align:center;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <span class="eyebrow">Sitios web para negocios de la zona</span>
+    <h1>Web Express MX</h1>
+    <p class="tag">Su sitio web, ya hecho. Si le gusta, paga y se queda. Si no, no pierde nada.</p>
+  </div>
+
+  <h2>Cómo funciona</h2>
+  <div class="steps">
+    <div class="card"><b>1. Le muestro la demo</b><p>Le mandamos su sitio ya armado para su negocio — sin pagar nada para verlo.</p></div>
+    <div class="card"><b>2. Paga con Mercado Pago</b><p>$3,900. Un solo pago, link seguro de Mercado Pago. Sin mensualidades obligadas.</p></div>
+    <div class="card"><b>3. Listo en 48h</b><p>Entregamos el sitio final con sus datos reales, menú, fotos y horarios.</p></div>
+  </div>
+
+  <h2>Precios</h2>
+  <div class="pricing">
+    <div class="price"><b>Sitio express</b><div class="amt">$3,900</div><small>1 página completa · WhatsApp · mapa · QR</small></div>
+    <div class="price"><b>Sitio completo</b><div class="amt">$5,900</div><small>+ Google Business optimizado · + sección fotos</small></div>
+    <div class="price"><b>Mantenimiento</b><div class="amt">$200<span>/mes</span></div><small>Opcional · cambios de menú/horarios</small></div>
+  </div>
+
+  <h2>Vea demos reales</h2>
+  <div class="demos">
+    <a href="demos/tortas-coyoacan.html">Tortas Coyoacán <span>restaurant · Coyoacán</span></a>
+    <a href="demos/carnitas-rincon-michoacano.html">Carnitas Rincón Michoacano <span>restaurant · Taxqueña</span></a>
+    <a href="demos/haru-maki.html">Haru Maki <span>restaurant · Coyoacán</span></a>
+    <a href="demos/happy-s-pizza.html">Happy's Pizza <span>restaurant · Miguel Ángel de Quevedo</span></a>
+    <a href="demos/spa-nails-fashion.html">Spa & Nails Fashion <span>belleza · Coyoacán</span></a>
+  </div>
+
+  <p class="foot">Web Express MX · CDMX · Los datos de cada demo se personalizan al aprobar. Dominio propio del cliente (opcional): el costo del dominio va por cuenta del cliente.</p>
+</div>
+</body>
+</html>

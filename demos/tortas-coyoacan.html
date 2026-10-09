@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tortas Coyoacán — ¡Pide por WhatsApp, recoge listo!</title>
+<style>
+:root{--bg:#ffffff;--fg:#1a1a2e;--muted:#6b6b7b;--accent:#14532d;--accent2:#16a34a;--card:#f6f6f2;--radius:14px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--fg);line-height:1.5}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px 64px}
+.demo{background:#fef3c7;color:#78350f;font-size:13px;padding:8px 14px;text-align:center;font-weight:600}
+.hero{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border-radius:var(--radius);padding:56px 28px;margin:20px 0;text-align:center}
+.hero .emoji{font-size:56px;display:block;margin-bottom:12px}
+h1{font-size:30px;margin-bottom:8px;line-height:1.15}
+.tag{color:#d1fae5;font-size:16px;margin-bottom:20px}
+.cta{display:inline-block;background:#25d366;color:#fff;font-weight:700;padding:14px 26px;border-radius:999px;text-decoration:none;font-size:16px;box-shadow:0 3px 10px rgba(0,0,0,.18)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:18px}
+.chip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:5px 12px;border-radius:999px;font-size:13px;color:#ecfdf5}
+h2{font-size:20px;margin:34px 0 14px;padding-left:12px;border-left:4px solid var(--accent2)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.card{background:var(--card);border-radius:var(--radius);padding:18px}
+.card .e{font-size:26px}
+.card b{display:block;margin:6px 0 2px}
+.card p{color:var(--muted);font-size:14px}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.info{grid-template-columns:1fr}}
+.map{width:100%;height:260px;border:1px solid #e5e5e0;border-radius:var(--radius);margin-top:6px}
+.foot{margin-top:36px;text-align:center;color:var(--muted);font-size:13px}
+.qr{text-align:center;margin:30px 0 10px}
+.qr img{width:140px;height:140px;border-radius:10px;border:1px solid #e5e5e0}
+</style>
+</head>
+<body>
+<div class="demo">🛠️ DEMO / PROPUESTA — sitio de ejemplo para © Tortas Coyoacán. Menú, horarios y fotos se personalizan al aprobar. Creado por Web Express MX</div>
+<div class="wrap">
+  <div class="hero">
+    <span class="emoji">Comida que sabe a casa</span>
+    <h1>Tortas Coyoacán</h1>
+    <p class="tag">🍽️</p>
+    <a class="cta" href="https://wa.me/525589138893?text=Hola, quiero información sobre sus servicios" target="_blank">💬 Escríbenos por WhatsApp</a>
+    <div class="chips"><span class="chip">Menú</span><span class="chip">Pide por WhatsApp</span><span class="chip">Para llevar</span></div>
+  </div>
+
+  <h2>Lo que ofrecemos</h2>
+  <div class="grid"><div class="card"><span class="e">✦</span><b>Tortas y más</b><p>Recetas clásicas, tamaño de verdad</p></div><div class="card"><span class="e">✦</span><b>Para llevar</b><p>Pide ahora, recoge caliente</p></div><div class="card"><span class="e">✦</span><b>Pedidos en grupo</b><p>Conseguimos volumen con anticipación</p></div></div>
+
+  <h2>Encuéntranos</h2>
+  <div class="info">
+    <div class="card"><b>📍 Dirección</b><p>Taxqueña, CDMX</p></div>
+    <div class="card"><b>🕒 Horario</b><p>Lun-Sáb · 9:00 am - 6:00 pm *(por confirmar)*</p></div>
+  </div>
+  <iframe class="map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-99.18,19.33,-99.15,19.35&layer=mapnik"></iframe>
+
+  <div class="qr">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/525589138893" alt="QR WhatsApp">
+    <p style="font-size:13px;color:var(--muted)">Escanea y escríbenos directo</p>
+  </div>
+
+  <p class="foot">Tortas Coyoacán · Taxqueña · Este sitio es una propuesta sin costo: si te gusta, es tuyo.</p>
+</div>
+</body>
+</html>
